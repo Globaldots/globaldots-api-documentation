@@ -1,16 +1,33 @@
 # Home
-## Welcome to the Third-Party Developer(s) Documentation for EVE Online.
-This is a new community supported repository for instructions and guidance that is useful for those making third-party tools for EVE.
+With over 10 years of experience, GlobalDots have an unparallel knowledge of today’s leading web technologies. 
+Our team know exactly what a business needs to do to succeed in providing the best online presence for their customers. 
+We can analyse your needs and challenges to provide you with a bespoke recommendation about which services you can benefit from.
 
-It is intended to always be a living document, and the plan is for it to be frequently updated to reflect changes in the APIs and/or services. At present it is very much a work in progress and much of the content is yet to be written. The main focus so far has been on the SSO and CREST, as these are new services, which have not yet had extensive third party documentation efforts, and get asked about frequently on the [technology lab forums](https://forums.eveonline.com/default.aspx?g=topics&f=263).
+With services ranging from website acceleration to DDoS mitigation and website monitoring services, GlobalDots has you covered. 
+Having worked with some of the leading service providers in the internet technology industry for many years, we have strong relationships with the best performing acceleration and security providers. 
+This ensures that you will get the best deals and most comprehensive service when using GlobalDots.
+
+## Welcome to the Globaldots API documentation.
+This documents the API for our customers, which allows authorized parties to get information about their accounts, contacts, usage and billing. 
+ 
+## Support 
+Support questions should be directed at our support team. 
+Please use the following email to contact our support: support@globaldots.com
+Our support web site is at http://my.globaldots.com 
+
+You can also use country-specific support numbers (Toll Free):
+
+United States: +1 888 487 3760
+
+United Kingdom: + 44 800 088 5238
+
+Germany: +49 800 723 8491
+
+Israel: +972 (1) 800-20-25-25
+
+Italy: +39 800 596823 
 
 ## Contributing
-There is a lot of work to be done on this site and any contributions are welcome. The docs are hosted on a [GitHub repository](https://github.com/ccpgames/eveonline-third-party-documentation), where anyone can fork it, commit changes and submit a pull request to get your changes onto the site.
-
-The source files are written in markdown, which is very easy to get started using. There is a fairly good introduction to markdown available from [GitHub](https://guides.github.com/features/mastering-markdown/).
-
-Please follow the `recommonmark` guidelines for [math formulas](https://recommonmark.readthedocs.io/en/latest/auto_structify.html#math-formula) and [inline math](https://recommonmark.readthedocs.io/en/latest/auto_structify.html#inline-math).
-
-There is a contributors file, as well as more info on contributing to the documentation on the repository.
+We do not usually accept external contributions to our API docuentation, but if you really want to please go to our github repository for more information. 
 
 * [Guidelines and References](reference/index.md)
