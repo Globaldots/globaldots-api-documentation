@@ -1,12 +1,11 @@
-# Home
+# Welcome to the Globaldots API documentation.
 With over 10 years of experience, GlobalDots have an unparallel knowledge of today’s leading web technologies. 
 Our team know exactly what a business needs to do to succeed in providing the best online presence for their customers. 
 We can analyse your needs and challenges to provide you with a bespoke recommendation about which services you can benefit from.
-
-## Welcome to the Globaldots API documentation.
-This documents the API for our customers, which allows authorized parties to get information about their accounts, contacts, usage and billing. 
  
-## Support 
+This documents the API for our customers, which allows authorized parties to get information about their accounts, contacts, usage and billing. 
+
+# Support 
 Support questions should be directed at our support team. 
 Please use the following email to contact our support: support@globaldots.com
 Our support web site is at http://my.globaldots.com 
@@ -23,7 +22,7 @@ Israel: +972 (1) 800-20-25-25
 
 Italy: +39 800 596823 
 
-## Contributing
+# Contributing
 We do not usually accept external contributions to our API docuentation, but if you really want to please go to our github repository for more information. 
 
 * [Guidelines and References](reference/index.md)
