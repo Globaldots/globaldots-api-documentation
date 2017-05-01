@@ -10,7 +10,7 @@ Support questions should be directed at our support team.
 
 Please use the following email to contact our support: support@globaldots.com
 
-Our support web site is at (http://my.globaldots.com)
+Our support web site is at [http://my.globaldots.com](http://my.globaldots.com)
 
 You can also use country-specific support numbers (Toll Free):
 
