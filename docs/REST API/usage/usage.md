@@ -1,34 +1,71 @@
-# Fleet
+# Usage
 
-The fleet resource provides details about a fleet. The fleet resource, along with all its children resources, may only be accessed with an access token belonging to the fleet boss.
+The usage resource provides details about the aggregate monthly usage on an account, as pulled by Globaldots integration systems.
 
-- **Route:** URL must be provided by user. It can be obtained in the client, under the fleet menu, by using the *Copy External Fleet Link* option. The URL will be copied to the clipboard.
+Usage data is updated on a MONTHLY basis. 
 
-  ![The Copy External Fleet Link option in the fleet menu](../../_images/crest_fleet_link.png)
+### Routes
+Usage on an account by accountid
+``GET /usage/<accountid>``
 
-- **Example URL:** `https://crest-tq.eveonline.com/fleets/1060711261968/`
-
-### GET
-
-- **Cache:** 5 seconds
-- **Scope:** `fleetRead`
-
-#### Sample Response
+#### GET Response
 
 **Media type:** `application/vnd.ccp.eve.Fleet-v1+json`
 
 ```json
 {
-  "isVoiceEnabled": false,
-  "motd": "This is an <b>awesome</b> fleet!",
-  "isFreeMove": false,
-  "isRegistered": false,
-  "members": {
-    "href": "https://crest-tq.eveonline.com/fleets/1060711261968/members/"
-  },
-  "wings": {
-    "href": "https://crest-tq.eveonline.com/fleets/1060711261968/wings/"
-  }
+  "result": "success",
+  "accountid": "666",
+  "usagedetails": [
+    {
+      "reporting_period": "2017-01-01 00:00:00",
+      "vendor": "cdnetworks",
+      "vendorid": "DDB56B98384A85ACA16B22B5340F241F",
+      "account_type": "subaccount",
+      "servicename": "Nice Customer",
+      "serviceid": "cdn",
+      "service": "Content Acceleration",
+      "region": "global",
+      "uom": "GB",
+      "qty": "123456.000000"
+    },
+    {
+      "reporting_period": "2017-01-01 00:00:00",
+      "vendor": "chinanetcenter",
+      "vendorid": "Nice-Customer",
+      "account_type": "account",
+      "servicename": "Nice Customer",
+      "serviceid": "cdn",
+      "service": "cdn",
+      "region": "cn",
+      "uom": "GB",
+      "qty": "678.310000"
+    },
+    {
+      "reporting_period": "2017-01-01 00:00:00",
+      "vendor": "level3",
+      "vendorid": "234678",
+      "account_type": "subaccount",
+      "servicename": "NiceCustomer",
+      "serviceid": "cdn",
+      "service": "caching",
+      "region": "global",
+      "uom": "GB",
+      "qty": "157.114860"
+    },
+    {
+      "reporting_period": "2017-01-01 00:00:00",
+      "vendor": "level3",
+      "vendorid": "234678",
+      "account_type": "subaccount",
+      "servicename": "NiceCustomer",
+      "serviceid": "cdn",
+      "service": "caching",
+      "region": "global",
+      "uom": "hits",
+      "qty": "2670936.000000"
+    }
+  ]
 }
 ```
 

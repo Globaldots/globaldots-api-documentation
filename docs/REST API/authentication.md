@@ -15,4 +15,4 @@ If you don't have an API key, or if you need to replace it, please open a suppor
 Use the API key in a custom http header `x-api-key`
 For example, 
 
-`curl -H "x-api-key: xyzaaaaaaa`
+`curl -H "x-api-key: xyzaaaaaaa" https://api.globaldots.com/v1/accounts`

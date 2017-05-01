@@ -1,23 +1,14 @@
 # Rate Limits
 
-CREST utilizes two rate limiting schemes: a basic per IP rate limit and a secondary per access token rate limit. If the rate limits are overstepped, requests will fail with a 503 error code.
-
-## Per IP Rate Limit
-
-- **Rate limit:** 150 requests per second
-- **Burst limit:** 400 requests
-- **Maximum concurrent connections:** 20
-
-This rate limit is applied per IPv4 address. All requests count against this limit. If multiple clients are making requests from the same public IPv4 address, they will be subject to a common rate limit.
-
-Maximum concurrent connections refers to the number of separate HTTP keep-alive connections which a client may use for requests. Attempts to start more connections than the limit will result in requests sent over them failing.
+The Globaldots API utilizes a rate limiting schema with per access token rate limit. If the rate limits are overstepped, requests will fail with a 503 error code. 
+The quota is reset daily at UTC 00:00:00
 
 ## Access Token Rate Limit
 
-- **Rate limit:** 20 requests per second
-- **Burst limit:** 100 requests
-
-This rate limit is applied per SSO access token. Unauthenticated requests (those without an Authorization header) do not count against this limit. If multiple clients are making requests using the same access token, they may or may not be subject to a common rate limit.
+- **Rate limit:** 10 requests per second
+- **Burst limit:** 20 requests
+- **Daily Quota:** 200 requests
+This rate limit is applied per access token. Unauthenticated requests (those without an Authorization header) do not count against this limit. If multiple clients are making requests using the same access token, they will be subject to the same rate limit per token.
 
 ## Burst Limits
 
