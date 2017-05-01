@@ -11,19 +11,8 @@ The current version is **v1**
 
 ## Calls
 
-### Account
-
-- [Account](account/accounts.md)
-
-### Contacts
-
-- [Contacts](contacts/contacts.md)
-
-### Billing
-
-- [Billing](billing/billing.md)
-
-### Usage
-
-- [Usage](usage/usage.md)
+- [Account](API Details/accounts.md)
+- [Contacts](API Details/contacts.md)
+- [Billing](API Details/billing.md)
+- [Usage](API Details/usage.md)
 
