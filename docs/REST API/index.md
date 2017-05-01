@@ -1,4 +1,4 @@
-# REST API
+# REST API (BETA)
 
 The endpoint for all API calls is going to be 
 

@@ -1,4 +1,4 @@
-# Welcome to the Globaldots API documentation.
+# Welcome to the Globaldots API documentation (BETA).
 With over 10 years of experience, GlobalDots have an unparallel knowledge of today’s leading web technologies. 
 Our team know exactly what a business needs to do to succeed in providing the best online presence for their customers. 
 We can analyse your needs and challenges to provide you with a bespoke recommendation about which services you can benefit from.
