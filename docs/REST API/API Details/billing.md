@@ -1,84 +1,79 @@
-# Station
+# Billing
 
-The stations resource allows an application to read station information.
+The billing resource lists the invoices existing on an account.
 
-## Station
+
 ### Route
-``/stations/<stationID:stationIdType>/``
+``GET /billing/<accountid>``
 
 
-### API version
-
-Station-v1+json
-
-### GET
-* Cache: 5 minutes
-* example from above response: [https://crest-tq.eveonline.com/stations/60000004/](https://crest-tq.eveonline.com/stations/60000004/)
+### GET response
 
 ```json
 {
-  "reprocessingEfficiency": 0.5,
-  "officeRentalCost": 599539,
-  "maxShipVolumeDockable": 50000000,
-  "reprocessingStationsTake": 0.05,
-  "system": {
-    "href": "https://crest-tq.eveonline.com/solarsystems/30002780/",
-    "name": "Muvolailen"
-  },
-  "services": [
+  "result": "success",
+  "accountid": "666",
+  "clientinvoices": [
     {
-      "serviceName": "repair-facilities"
-    },
-    {
-      "serviceName": "courier-missions"
-    },
-    {
-      "serviceName": "reprocessing-plant"
-    },
-    {
-      "serviceName": "office-rental"
-    },
-    {
-      "serviceName": "loyalty-point-store"
-    },
-    {
-      "serviceName": "storage"
-    },
-    {
-      "serviceName": "news"
-    },
-    {
-      "serviceName": "navy-offices"
-    },
-    {
-      "serviceName": "insurance"
-    },
-    {
-      "serviceName": "market"
-    },
-    {
-      "serviceName": "docking"
-    },
-    {
-      "serviceName": "fitting"
+      "invoiceid": "6666",
+      "invoicenum": "10666",
+      "accountid": "666",
+      "date": "2017-04-02",
+      "duedate": "2017-05-01",
+      "subtotal": "912.82",
+      "tax": 0,
+      "total": "912.82",
+      "status": "Unpaid",
+      "notes": "Some notes",
+      "currencycode": "EUR",
+      "items": [
+        {
+          "id": "13335",
+          "description": "EdgeCast Standard CDN (01/04/2017 - 30/04/2017)",
+          "amount": "6750.00",
+          "taxed": true
+        },
+        {
+          "id": "13336",
+          "description": "Addon - EC Rules Engine (01/04/2017 - 30/04/2017)",
+          "amount": "350.00",
+          "taxed": true
+        },
+        {
+          "id": "13337",
+          "description": "Ngenix CDN Domain (01/04/2017 - 30/04/2017)",
+          "amount": "777.00",
+          "taxed": true
+        },
+        {
+          "id": "13338",
+          "description": "CNC CDN Services (01/04/2017 - 30/04/2017)\nCommitment Quantity: 10 MBPS",
+          "amount": "1200.00",
+          "taxed": true
+        },
+        {
+          "id": "13339",
+          "description": "Usage for 02-2017 : Edgecast CDN, 5069.30 GB X 0.06",
+          "amount": "304.2",
+          "taxed": true
+        },
+        {
+          "id": "13340",
+          "description": "Usage for 02-2017 : Ngenix CDN, 1241.4 GB X 0.3",
+          "amount": "372.4",
+          "taxed": true
+        },
+        {
+          "id": "13341",
+          "description": "Usage for 02-2017 : Ngenix Requests, 5080.9 GB X 0.02",
+          "amount": "101.6",
+          "taxed": true
+        }
+      ]
+    }, 
+	....
+      ]
     }
-  ],
-  "race": {
-    "href": "https://crest-tq.eveonline.com/races/1/",
-    "id": 1,
-    "id_str": "1"
-  },
-  "owner": {
-    "href": "https://crest-tq.eveonline.com/corporations/1000002/"
-  },
-  "position": {
-    "y": 256414064640,
-    "x": 1723680890880,
-    "z": -60755435520
-  },
-  "type": {
-    "href": "https://crest-tq.eveonline.com/inventory/types/1531/"
-  },
-  "name": "Muvolailen X - Moon 3 - CBD Corporation Storage"
+  ]
 }
 ```

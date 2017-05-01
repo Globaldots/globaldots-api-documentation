@@ -10,8 +10,6 @@ Usage on an account by accountid
 
 #### GET Response
 
-**Media type:** `application/vnd.ccp.eve.Fleet-v1+json`
-
 ```json
 {
   "result": "success",

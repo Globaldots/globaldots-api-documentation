@@ -25,4 +25,3 @@ Italy: +39 800 596823
 # Contributing
 We do not usually accept external contributions to our API docuentation, but if you really want to please go to our github repository for more information. 
 
-* [Guidelines and References](reference/index.md)
