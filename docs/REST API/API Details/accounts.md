@@ -4,8 +4,11 @@ The accounts resource allows an application to list the accounts associated with
 
 ### Routes
 A list of accounts associated with the API key
+
 ``GET /accounts``
+
 A single account by accountid
+
 ``GET /accounts/<accountid>``
 
 ### GET response

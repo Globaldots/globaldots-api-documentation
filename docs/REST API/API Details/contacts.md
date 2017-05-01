@@ -4,6 +4,7 @@ The Contacts resource lists contacts on an individual account or on all accounts
 
 ### Route
 ``GET /contacts``
+
 ``GET /contacts/<accountid>``
 
 ### GET response
