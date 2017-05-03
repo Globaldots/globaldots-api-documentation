@@ -2,8 +2,10 @@
 The API is versioned, and the version is part of the URL.
 
 ## Versions
-2017-05-01	v1
 
+| Date        | Version |
+| ----------- |:-------:|
+| 2017-05-01  | v1   |
 
 ## Breaking Changes
 
