@@ -6,7 +6,7 @@ Usage data is updated on a MONTHLY basis.
 
 ### Routes
 Usage on an account by accountid
-``GET /usage/<accountid>``
+``GET /<version>/usage/<accountid>``
 
 #### GET Response
 

@@ -4,7 +4,7 @@ The billing resource lists the invoices existing on an account.
 
 
 ### Route
-``GET /billing/<accountid>``
+``GET /<version>/billing/<accountid>``
 
 
 ### GET response
